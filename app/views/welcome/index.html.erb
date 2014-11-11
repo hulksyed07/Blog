@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+ #header {
+    align:center;
+    text-align:center;
+    background: #ccc;
+    padding: 20px;
+    }
+
+ body {
+       background-color:linen;
+       text-align:center;
+ }
+#footer {
+    text-align:center;
+    position: fixed;
+    bottom: 0px;
+    clear: right;
+    background: #eee;
+    padding: 20px;
+    width: 100%;
+    height: 20px;
+    }
+  
+</style>
+</head>
+<div id="header">
+<header>
+<h1>Welcome to first Rails Application </h1>
+</header>
+</div>
+<body>
+<p>Hello Rails i am learning you</p>
+
+<%= link_to 'My Blog',controller:'articles' %>
+</body>
+<div id="footer">
+<footer>
+@All Rights Reserved<br>
+<%=link_to 'Home',welcome_index_path %>
+</footer>
+</div>
+</html>
